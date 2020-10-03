@@ -1,4 +1,4 @@
-package org.revinton.payapp.application;
+package org.revinton.payapp.web.application;
 
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;

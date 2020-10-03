@@ -1,9 +1,9 @@
-package org.revinton.payapp.application;
+package org.revinton.payapp.web.application;
 
-import org.revinton.payapp.api.PingResource;
-import org.revinton.payapp.providers.GsonMessageBodyReader;
-import org.revinton.payapp.providers.GsonMessageBodyWriter;
-import org.revinton.payapp.providers.PayAppExceptionMapper;
+import org.revinton.payapp.api.resources.PingResource;
+import org.revinton.payapp.api.providers.GsonMessageBodyReader;
+import org.revinton.payapp.api.providers.GsonMessageBodyWriter;
+import org.revinton.payapp.api.providers.PayAppExceptionMapper;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

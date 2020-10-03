@@ -1,4 +1,4 @@
-package org.revinton.payapp.providers;
+package org.revinton.payapp.api.providers;
 
 import javax.ws.rs.core.Response;
 import javax.ws.rs.ext.ExceptionMapper;

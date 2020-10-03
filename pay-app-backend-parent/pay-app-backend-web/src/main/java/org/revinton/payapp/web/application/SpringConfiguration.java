@@ -1,4 +1,4 @@
-package org.revinton.payapp.application;
+package org.revinton.payapp.web.application;
 
 import com.google.gson.Gson;
 import org.revinton.payapp.SpringComponentScanMarker;

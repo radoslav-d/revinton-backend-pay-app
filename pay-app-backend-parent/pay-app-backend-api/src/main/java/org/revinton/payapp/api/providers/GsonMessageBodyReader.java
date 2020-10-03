@@ -1,4 +1,4 @@
-package org.revinton.payapp.providers;
+package org.revinton.payapp.api.providers;
 
 import com.google.gson.Gson;
 

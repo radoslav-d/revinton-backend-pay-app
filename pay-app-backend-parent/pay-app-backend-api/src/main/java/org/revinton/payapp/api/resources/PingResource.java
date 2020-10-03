@@ -1,4 +1,4 @@
-package org.revinton.payapp.api;
+package org.revinton.payapp.api.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
