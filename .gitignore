@@ -1,0 +1,13 @@
+.idea
+bin/
+target/
+**/target/
+.project
+.classpath
+.settings
+*.iml
+*.zip
+*.war
+*.log
+.pmd
+.DS_Store

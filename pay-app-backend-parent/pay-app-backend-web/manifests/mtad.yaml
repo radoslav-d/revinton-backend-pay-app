@@ -1,0 +1,15 @@
+_schema-version: 3.0.0
+ID: pay-app-java-backend
+version: ${project.version}
+
+modules:
+  - name: pay-app-java-backend
+    path: ../${project.build.finalName}.war
+    type: java.tomcat
+    parameters:
+      memory: 1G
+      disk-quota: 256M
+      host: "pay-app-java-backend"
+    properties:
+      TARGET_RUNTIME: tomcat
+      VERSION: ${project.version}
