@@ -13,3 +13,12 @@ modules:
     properties:
       TARGET_RUNTIME: tomcat
       VERSION: ${project.version}
+    requires:
+      - name: pay-app-database
+
+resources:
+  - name: pay-app-database
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: postgresql
+      service-plan: v9.6-dev
