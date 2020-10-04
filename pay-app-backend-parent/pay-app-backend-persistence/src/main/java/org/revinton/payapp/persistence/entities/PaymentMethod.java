@@ -52,10 +52,12 @@ public class PaymentMethod {
         this.image = image;
     }
 
-    public void fromModel(PaymentMethodModel model) {
-        setId(model.getId());
-        setName(model.getName());
-        setDefault(model.getDefault());
-        setImage(model.getImage());
+    public static PaymentMethod of(PaymentMethodModel model) {
+        PaymentMethod paymentMethod = new PaymentMethod();
+        paymentMethod.setId(model.getId());
+        paymentMethod.setName(model.getName());
+        paymentMethod.setDefault(model.getDefault());
+        paymentMethod.setImage(model.getImage());
+        return paymentMethod;
     }
 }

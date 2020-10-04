@@ -4,12 +4,17 @@
              version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
     <persistence-unit name="nrPHuwDPQer30G73" transaction-type="RESOURCE_LOCAL">
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-        <jta-data-source></jta-data-source>
-        <non-jta-data-source></non-jta-data-source>
+        <class>org.revinton.payapp.persistence.entities.Place</class>
+        <class>org.revinton.payapp.persistence.entities.Offer</class>
+        <class>org.revinton.payapp.persistence.entities.PaymentMethod</class>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
-            <property name="eclipselink.ddl-generation" value="create-tables" />
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="javax.persistence.jdbc.url" value="" />
+            <property name="javax.persistence.jdbc.user" value="" />
+            <property name="eclipselink.ddl-generation" value="create-or-extend-tables" />
             <property name="eclipselink.ddl-generation.output-mode" value="database" />
+            <property name="eclipselink.logging.level" value="FINE" />
         </properties>
     </persistence-unit>
 </persistence>

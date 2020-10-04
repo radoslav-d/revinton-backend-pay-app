@@ -1,4 +1,4 @@
-package org.revinton.payapp.persistence;
+package org.revinton.payapp.persistence.helpers;
 
 import org.eclipse.persistence.config.EntityManagerProperties;
 import org.revinton.payapp.core.utility.Environment;
@@ -21,8 +21,8 @@ public class JdbcVariableGetter {
         this.environment = new Environment();
     }
 
-    public Map<String, String> getDataSourceProperties() {
-        Map<String, String> properties = new HashMap<>();
+    public Map<String, Object> getDataSourceProperties() {
+        Map<String, Object> properties = new HashMap<>();
         properties.put(EntityManagerProperties.JDBC_DRIVER, JDBC_POSTGRESQL_DRIVER);
         properties.put(EntityManagerProperties.JDBC_URL, getUrl());
         properties.put(EntityManagerProperties.JDBC_USER, getUsername());

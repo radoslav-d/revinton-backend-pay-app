@@ -61,11 +61,13 @@ public class Place {
         this.image = image;
     }
 
-    public void fromModel(PlaceModel model) {
-        setId(model.getId());
-        setName(model.getName());
-        setAddress(model.getAddress());
-        setRating(model.getRating());
-        setImage(model.getImage());
+    public static Place of(PlaceModel model) {
+        Place place = new Place();
+        place.setId(model.getId());
+        place.setName(model.getName());
+        place.setAddress(model.getAddress());
+        place.setRating(model.getRating());
+        place.setImage(model.getImage());
+        return place;
     }
 }

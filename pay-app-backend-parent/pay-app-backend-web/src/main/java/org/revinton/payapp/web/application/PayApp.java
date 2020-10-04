@@ -1,5 +1,7 @@
 package org.revinton.payapp.web.application;
 
+import org.revinton.payapp.api.resources.OffersResource;
+import org.revinton.payapp.api.resources.PaymentMethodsResource;
 import org.revinton.payapp.api.resources.PingResource;
 import org.revinton.payapp.api.providers.GsonMessageBodyReader;
 import org.revinton.payapp.api.providers.GsonMessageBodyWriter;
@@ -22,7 +24,8 @@ public class PayApp extends Application {
         classes.add(PayAppExceptionMapper.class);
         classes.add(PingResource.class);
         classes.add(PlacesResource.class);
-        // TODO add classes, like rest controllers and etc, which needs to be initialized
+        classes.add(OffersResource.class);
+        classes.add(PaymentMethodsResource.class);
         return classes;
     }
 }

@@ -62,11 +62,13 @@ public class Offer {
         this.placeId = placeId;
     }
 
-    public void fromModel(OfferModel model) {
-        setId(model.getId());
-        setName(model.getName());
-        setPrice(model.getPrice());
-        setImage(model.getImage());
-        setPlaceId(model.getPlaceId());
+    public static Offer of(OfferModel model) {
+        Offer offer = new Offer();
+        offer.setId(model.getId());
+        offer.setName(model.getName());
+        offer.setPrice(model.getPrice());
+        offer.setImage(model.getImage());
+        offer.setPlaceId(model.getPlaceId());
+        return offer;
     }
 }
